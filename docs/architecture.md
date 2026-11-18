@@ -12,10 +12,9 @@ Les agents des terminaux transmettent leur télémétrie au Manager. Celui-ci an
 - **Wazuh Indexer :** stockage et recherche des alertes.
 - **Wazuh Dashboard :** interface d’investigation.
 - **Windows 11 :** agent Wazuh, Sysmon et collecte des événements Windows Security.
-- **Client Ubuntu :** agent Wazuh, exercices SCA/FIM, journaux SSH, UFW et Fail2ban.
+- **Client Ubuntu :** agent Wazuh, exercices SCA/FIM, journaux SSH, UFW et Fail2ban, Suricata
 - **Kali Linux :** source de tests contrôlés et autorisés.
-- **Nessus Essentials :** outil séparé d’évaluation des vulnérabilités.
-- **Suricata :** source IDS réseau envisagée ; intégration non terminée.
+- **Nessus Essentials :** outil d’évaluation des vulnérabilités.
 
 ## Réseau
 
@@ -27,10 +26,10 @@ Les agents des terminaux transmettent leur télémétrie au Manager. Celui-ci an
 | Kali | `192.168.85.131` | Source de tests autorisés |
 | Windows 11 | DHCP / réseau hôte | Terminal Windows |
 
-L’agent Windows a notamment été observé dans Wazuh sous le nom `Admin_windows` (ID agent `002`) pendant un exercice. Les identifiants peuvent changer après un nouvel enrôlement.
+
 
 ## Limites et frontières de confiance
 
 Il s’agit d’un environnement pédagogique, et non d’une architecture de production hautement disponible. Le modèle Single-Node concentre les services sur une seule VM. Les accès ponté et NAT doivent être réévalués avant toute exposition en dehors du réseau isolé du laboratoire.
 
-Ne pas publier de véritables identifiants, clés d’enrôlement, certificats privés, journaux non expurgés ou détails réseau sensibles.
+

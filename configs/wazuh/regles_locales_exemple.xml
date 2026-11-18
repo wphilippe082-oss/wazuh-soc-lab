@@ -1,7 +1,0 @@
-<!-- Exemple uniquement. Valider avec wazuh-analysisd -t avant déploiement. -->
-<group name="local,">
-  <rule id="100100" level="3">
-    <match>recovery_test</match>
-    <description>Exemple de règle locale de test de récupération</description>
-  </rule>
-</group>
